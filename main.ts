@@ -84,10 +84,22 @@ namespace KSB037 {
                 }
                 break;
             case move1.counterclockwise:
-                a=1;
+                if (a==0)
+                {
+                    pins.digitalWritePin(DigitalPin.P12, 0);
+                    pins.analogWritePin(AnalogPin.P2, power);
+                } else {
+                    pins.digitalWritePin(DigitalPin.P8, 0);
+                    pins.analogWritePin(AnalogPin.P1, power);
+                }
                 break;
             case move1.stopmotor:
-                a=1;
+                if (a==0)
+                {
+                    pins.analogWritePin(AnalogPin.P2, 0);
+                } else {
+                    pins.analogWritePin(AnalogPin.P1, 0);
+                }
                 break;
         }
     }
