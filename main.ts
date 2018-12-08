@@ -64,7 +64,7 @@ namespace KSB037 {
     //% weight=50
     //% power.min=0 power.max=1023
     export function motorstatus(myMotor: motor, myMove1: move1, power: number) {
-        let a;
+        let a=-1;
         switch (myMotor) {
             case motor.motor1:
                 a=0;
