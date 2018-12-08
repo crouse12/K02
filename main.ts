@@ -74,7 +74,14 @@ namespace KSB037 {
         }
         switch (myMove1) {
             case move1.clockwise:
-                a=0;
+                if (a==0)
+                {
+                    pins.digitalWritePin(DigitalPin.P12, 1);
+                    pins.analogWritePin(AnalogPin.P2, power);
+                } else {
+                    pins.digitalWritePin(DigitalPin.P8, 1);
+                    pins.analogWritePin(AnalogPin.P1, power);
+                }
                 break;
             case move1.counterclockwise:
                 a=1;
