@@ -72,7 +72,7 @@ namespace KSB037 {
                 a=1;
                 break;
         }
-        switch (myM) {
+        switch (myMove1) {
             case move1.clockwise:
                 a=0;
                 break;
