@@ -72,17 +72,6 @@ namespace KSB037 {
                 a=1;
                 break;
         }
-        switch (myMove1){
-            case move1.clockwise:
-
-                break;
-            case move1.counterclosewise:
-
-                break;
-            case move1.stopmotor:
-
-                break;
-        }
     }
     function pin(pin: number,power: number)
     {
