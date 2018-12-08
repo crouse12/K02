@@ -73,7 +73,7 @@ namespace KSB037 {
                 {
                         pins.digitalWritePin(DigitalPin.P12, 0);
                         pins.analogWritePin(AnalogPin.P2, power);
-                } else if (myMove1==move1.stop)
+                } else if (myMove1==move1.stopmotor)
                 {
                        pins.analogWritePin(AnalogPin.P2, 0);
                 }
@@ -87,7 +87,7 @@ namespace KSB037 {
                 {
                         pins.digitalWritePin(DigitalPin.P8, 0);
                         pins.analogWritePin(AnalogPin.P1, power);
-                } else if (myMove1==move1.stop)
+                } else if (myMove1==move1.stopmotor)
                 }
                        pins.analogWritePin(AnalogPin.P1, 0);
                 }
