@@ -64,7 +64,7 @@ namespace KSB037 {
     //% weight=50
     //% power.min=0 power.max=1023
     export function motorstatus(myMotor: motor, myMove1: move1, power: number) {
-        if (myMotor=motor.motor1) {
+        if (myMotor==motor.motor1) {
                 if (myMove1 == move1.clockwise)
                 {
                         pins.digitalWritePin(DigitalPin.P12, 1);
