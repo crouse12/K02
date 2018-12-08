@@ -68,8 +68,10 @@ namespace KSB037 {
         switch (myMotor) {
             case motor.motor1:
                 a=0;
+                break;
             case motor.motor2:
                 a=1;
+                break;
         }
         switch (myMove1){
             case move1.clockwise:
@@ -82,6 +84,7 @@ namespace KSB037 {
                     pins.digitalWritePin(DigitalPin.P8, 1);
                     pins.analogWritePin(AnalogPin.P1, power);
                 }
+                break;
             case move1.counterclosewise:
                 if (a==0)
                 {
@@ -92,6 +95,7 @@ namespace KSB037 {
                     pins.digitalWritePin(DigitalPin.P8, 0);
                     pins.analogWritePin(AnalogPin.P1, power);
                 }
+                break;
             case move1.stopmotor:
                 if (a==0)
                 {
@@ -100,6 +104,7 @@ namespace KSB037 {
                 {
                     pins.analogWritePin(AnalogPin.P1, 0);
                 }
+                break;
         }
     } 
  
