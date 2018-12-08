@@ -59,7 +59,7 @@ namespace KSB037 {
             pins.analogWritePin(AnalogPin.P2, 0);
         }
     }
- 
+/** 
     //% blockId="motorstatus" block="start %myMotor as  %myMove1 speed (0~1023) %power"
     //% weight=50
     //% power.min=0 power.max=1023
@@ -75,37 +75,18 @@ namespace KSB037 {
         }
         switch (myMove1){
             case move1.clockwise:
-                if (a==0)
-                {
-                        pins.digitalWritePin(DigitalPin.P12, 1);
-                        pins.analogWritePin(AnalogPin.P2, power);
-                } else if (a==1)
-                {
-                    pins.digitalWritePin(DigitalPin.P8, 1);
-                    pins.analogWritePin(AnalogPin.P1, power);
-                }
+
                 break;
             case move1.counterclosewise:
-                if (a==0)
-                {
-                    pins.digitalWritePin(DigitalPin.P12, 0);
-                    pins.analogWritePin(AnalogPin.P2, power);
-                } else if (a==1)
-                {
-                    pins.digitalWritePin(DigitalPin.P8, 0);
-                    pins.analogWritePin(AnalogPin.P1, power);
-                }
+
                 break;
             case move1.stopmotor:
-                if (a==0)
-                {
-                    pins.analogWritePin(AnalogPin.P2, 0);
-                } else if (a==1)
-                {
-                    pins.analogWritePin(AnalogPin.P1, 0);
-                }
+
                 break;
         }
-    } 
- 
+    }
+    function pin(pin: number,power: number)
+    {
+    }
+*/
 }
