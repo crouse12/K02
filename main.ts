@@ -59,7 +59,6 @@ namespace KSB037 {
             pins.analogWritePin(AnalogPin.P2, 0);
         }
     }
-/** 
     //% blockId="motorstatus" block="start %myMotor as  %myMove1 speed (0~1023) %power"
     //% weight=50
     //% power.min=0 power.max=1023
@@ -88,5 +87,4 @@ namespace KSB037 {
     function pin(pin: number,power: number)
     {
     }
-*/
 }
