@@ -47,14 +47,14 @@ namespace KSB037 {
             pins.analogWritePin(AnalogPin.P2, power);
             break;
         case move.right: 
-            pins.digitalWritePin(DigitalPin.P8, 0);
-            pins.digitalWritePin(DigitalPin.P12, 1);
+            pins.digitalWritePin(DigitalPin.P8, 1);
+            pins.digitalWritePin(DigitalPin.P12, 0);
             pins.analogWritePin(AnalogPin.P1, power);
             pins.analogWritePin(AnalogPin.P2, power);
             break;
         case move.left: 
-            pins.digitalWritePin(DigitalPin.P8, 1);
-            pins.digitalWritePin(DigitalPin.P12, 0);
+            pins.digitalWritePin(DigitalPin.P8, 0);
+            pins.digitalWritePin(DigitalPin.P12, 1);
             pins.analogWritePin(AnalogPin.P1, power);
             pins.analogWritePin(AnalogPin.P2, power);
             break;
