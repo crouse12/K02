@@ -65,33 +65,33 @@ namespace KSB037 {
     //% weight=50
     //% power.min=0 power.max=1023
     export function motorstatus(myMotor: motor, myMove1: move1, power: number) {
-        switch (myMotor) {
-            case motor.motor1: 
-                swith (myMove1)
+        if (myMotor==motor.motor1) {
+                if (myMove1 == move1.clockwise)
                 {
-                    case move1.clockwise:
                         pins.digitalWritePin(DigitalPin.P12, 1);
                         pins.analogWritePin(AnalogPin.P2, power);
-                    case move1.counterclosewise:
+                } else if (myMove1==move1.counterclosewise)
+                {
                         pins.digitalWritePin(DigitalPin.P12, 0);
                         pins.analogWritePin(AnalogPin.P2, power);
-                    case move1.stop:
+                } else if (myMove1 ==move1.stop)
+                {
                        pins.analogWritePin(AnalogPin.P2, 0);
                 }
-             break;
-            case motor.motor2:
-                swith (myMove1)
+        }else if (myMotor==motor.motor2)
+        {
+                if (myMove1==move1.clockwise)
                 {
-                    case move1.clockwise:
                         pins.digitalWritePin(DigitalPin.P8, 1);
                         pins.analogWritePin(AnalogPin.P1, power);
-                    case move1.counterclosewise:
+                } if (myMove1==move1.counterclosewise)
+                {
                         pins.digitalWritePin(DigitalPin.P8, 0);
                         pins.analogWritePin(AnalogPin.P1, power);
-                    case move1.stop:
+                }else if (myMove1==move1.stop)
+                }
                        pins.analogWritePin(AnalogPin.P1, 0);
                 }
-             break;
         }
     }
     
