@@ -72,6 +72,17 @@ namespace KSB037 {
                 a=1;
                 break;
         }
+        switch (myM) {
+            case move1.clockwise:
+                a=0;
+                break;
+            case move1.counterclockwise:
+                a=1;
+                break;
+            case move1.stopmotor:
+                a=1;
+                break;
+        }
     }
     function pin(pin: number,power: number)
     {
