@@ -1,0 +1,15 @@
+{
+    "KSB037.car|block": "小車的狀態為 %myMove 速度 (0~1023) %power",
+    "KSB037.move.forward|block": "前進",
+    "KSB037.move.back|block": "後退",
+    "KSB037.move.right|block": "向右",
+    "KSB037.move.left|block": "向左",
+    "KSB037.move.stop|block": "停止",
+    "KSB037.motorstatus|block": "設定 %myMotor 為 %myMove1 速度 (0~1023) %power",
+    "KSB037.move1.clockwise|block": "順時針",
+    "KSB037.move1.clockwise|block": "順時針",
+    "KSB037.move1.counterclockwise|block": "逆時針",
+    "KSB037.move1.stopmotor|block": "停止轉動",
+    "KSB037.motor.motor1|block": "馬達1",
+    "KSB037.motor.motor2|block": "馬達2"
+}
