@@ -60,12 +60,11 @@ namespace KSB037 {
         }
     }
  
-  /**
     //% blockId="motorstatus" block="start %myMotor as  %myMove1 speed (0~1023) %power"
     //% weight=50
     //% power.min=0 power.max=1023
     export function motorstatus(myMotor: motor, myMove1: move1, power: number) {
-        if (myMotor==motor.motor1) {
+        if (myMotor=motor.motor1) {
                 if (myMove1 == move1.clockwise)
                 {
                         pins.digitalWritePin(DigitalPin.P12, 1);
@@ -74,7 +73,7 @@ namespace KSB037 {
                 {
                         pins.digitalWritePin(DigitalPin.P12, 0);
                         pins.analogWritePin(AnalogPin.P2, power);
-                } else if (myMove1 ==move1.stop)
+                } else if (myMove1==move1.stop)
                 {
                        pins.analogWritePin(AnalogPin.P2, 0);
                 }
@@ -84,17 +83,15 @@ namespace KSB037 {
                 {
                         pins.digitalWritePin(DigitalPin.P8, 1);
                         pins.analogWritePin(AnalogPin.P1, power);
-                } if (myMove1==move1.counterclosewise)
+                } else if (myMove1==move1.counterclosewise)
                 {
                         pins.digitalWritePin(DigitalPin.P8, 0);
                         pins.analogWritePin(AnalogPin.P1, power);
-                }else if (myMove1==move1.stop)
+                } else if (myMove1==move1.stop)
                 }
                        pins.analogWritePin(AnalogPin.P1, 0);
                 }
         }
-    }
- 
-*/ 
+    } 
  
 }
